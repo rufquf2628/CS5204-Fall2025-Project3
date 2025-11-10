@@ -3,7 +3,7 @@
 # To remove files, type "make clean"
 
 CC = gcc
-CFLAGS = -g -Wall -Wextra -fsanitize={address,undefined} # -Werror  # -fsanitize=thread # -O0
+CFLAGS = -g -Wall -Wextra -fsanitize=address,undefined # -Werror  # -fsanitize=thread # -O0
 OBJS = wserver.o wclient.o request.o io_helper.o thread_pool.o scheduler.o
 
 .SUFFIXES: .c .o 
